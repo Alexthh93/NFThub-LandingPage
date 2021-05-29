@@ -8,10 +8,10 @@ body {
   color: white;
   text-align: center;
    min-height: 100%;
+   background: linear-gradient(to right, #000000, #c469de);
 }
 
 section {
-  background: linear-gradient(to right, #000000, #c469de);
   padding-bottom: 20%;
 }
 
@@ -51,16 +51,21 @@ section {
   right: -0;
   min-width: 40%;
   filter: blur(0.7px);
+  animation: shimmy 2s infinite;
+  animation-direction: alternate;
+}
 
-
-
+@keyframes shimmy {
+  100% {
+    transform: translateY(20px);
+  }
 }
 
 
 
 /* MEDIA QUERY FOR TOP SECTION ----- MOBILE VERSION*/
 @media screen and (max-width: 1028px) {
-  #imgTitle {
+  #imgTitle{
     position: relative;
     top: auto;
     right: 0;
@@ -117,7 +122,7 @@ section {
   margin: 0;
 }
 
-.discoverImages {
+.discoverImages{
   max-height: 80%;
   max-width: 80%;
   margin: 40px 20px 20px 20px;
@@ -252,6 +257,7 @@ section {
 
 #theFirstNFTSection {
   position: relative;
+  padding-bottom: 15%;
 }
 
 
@@ -287,7 +293,17 @@ section {
   max-width: 80%;
   margin: 0 0 0 0;
   filter: drop-shadow(7px 7px 20px #a0a0a0);
+  animation: featureImages 1s infinite;
+  animation-direction: alternate;
+
 }
+
+  @keyframes featureImages {
+  100% {
+    transform: translateY(20px);
+  }
+}
+
 
 .subTextNFT {
   font-size: 3rem;
@@ -345,6 +361,24 @@ section {
    margin-right: 0;
 }
 
+
+.featureImages {
+  max-height: 80%;
+  max-width: 80%;
+  margin: 0 0 0 0;
+  filter: drop-shadow(7px 7px 20px #a0a0a0);
+  animation: featureImages 1.5s infinite;
+  animation-direction: alternate;
+
+}
+
+  @keyframes featureImages {
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+
 .subTextNFT {
   font-size: 1.2rem;
   font-weight: lighter;
@@ -358,7 +392,7 @@ section {
   font-weight: 300;
   text-align: center;
   letter-spacing: 0.8px;
-  margin-left: 30px;
+  margin-left: 0px;
 }
 
 
@@ -372,5 +406,88 @@ section {
 }
 
 }
+
+
+/* STAY TUNED SECTION */
+
+#stayTuned {
+  position: relative;
+}
+
+.stayTunedContainer {
+  padding-bottom: 35%;
+}
+
+.ColoredBalls {
+  position: absolute;
+  z-index: 0;
+  top: 0%;
+  left:25%;
+  max-height: 35%;
+  max-width: 35%;
+  margin: 0 0 0 0;
+  filter: drop-shadow(7px 7px 10px #1b1c25);
+}
+
+.AnimalAbstract {
+  position: absolute;
+  z-index: 1;
+  top: 2.5%;
+  right: 25%;
+  max-height:35%;
+  max-width: 35%;
+  margin: 0 0 0 0;
+  filter: drop-shadow(7px 7px 10px #1b1c25);
+}
+
+.WomanAbstract {
+  position: absolute;
+  z-index: 3;
+  top: 10%;
+  left: 40%;
+  max-height: 45%;
+  max-width: 45%;
+  margin: 0 0 0 0;
+  filter: drop-shadow(7px 7px 10px #1b1c25);
+}
+
+
+.stayTunedText {
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 5px 5px 6px #a0a0a0; 
+}
+
+.stayTunedDividerIcon {
+   border-top: 8px solid #da3847;
+   border-radius: 3px;
+   width: 65%;
+   margin-right: 14%; 
+}
+
+
+
+/*MEDIA QUERY STAY TUNED SECION*/
+
+@media screen and (max-width: 1028px) {
+
+  .WomanAbstract {
+  position: absolute;
+  z-index: 3;
+  top: 10%;
+  left: 35%;
+  max-height: 35%;
+  max-width: 45%;
+  margin: 0 0 0 0;
+  filter: drop-shadow(7px 7px 10px #1b1c25);
+}
+
+.stayTunedText {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-shadow: 5px 5px 6px #a0a0a0;
+}
+
+
 
 
