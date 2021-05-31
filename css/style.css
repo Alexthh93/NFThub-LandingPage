@@ -51,16 +51,16 @@ section {
   right: -0;
   min-width: 40%;
   filter: blur(0.7px);
-  animation: shimmy 2s infinite;
+  animation: shimmy 1.7s infinite;
   animation-direction: alternate;
 }
+
 
 @keyframes shimmy {
   100% {
     transform: translateY(20px);
   }
 }
-
 
 
 /* MEDIA QUERY FOR TOP SECTION ----- MOBILE VERSION*/
@@ -74,6 +74,7 @@ section {
     display: none;
   }
 
+
   .introText {
     font-size: 3rem;
     font-weight: bold;
@@ -81,11 +82,13 @@ section {
     padding-bottom: 35px;
   }
 
+
   .subText {
     font-size: 1.5rem;
     font-weight: lighter;
     padding-top: 35px;
   }
+
 
   .btn {
     background-color: #f80040;
@@ -97,6 +100,7 @@ section {
     box-shadow: 3px 4px 3 px darkred;
   }
 }
+
 
 /* DISCOVER SECTION*/
 
@@ -112,6 +116,7 @@ section {
   padding-bottom: 10px;
 }
 
+
 .discoverSectionImages {
   width: 100%;
   position: absolute;
@@ -122,13 +127,15 @@ section {
   margin: 0;
 }
 
-.discoverImages{
+
+.discoverImages {
   max-height: 80%;
   max-width: 80%;
   margin: 40px 20px 20px 20px;
   filter: drop-shadow(7px 7px 8px #1b1c25);
   border-radius: 8%;
 }
+
 
 /*Media Query for DISCOVER SECTION - MOBEIL VERSION*/
 
@@ -138,10 +145,11 @@ section {
     position: absolute;
     left: 0;
     right: 0;
-    top: 0px;
+    top: -40px;
     bottom: 0;
     margin: 0; 
   }
+
 
   .discoverImages {
     max-height: 100%;
@@ -151,13 +159,12 @@ section {
     border-radius: 8%;
   }
 
+
   #discoverContainer {
     width: 100%;
     padding-bottom: 10px;
   }
 }
-
-
 
 
 /* Buy, Sell and Collect SECTION */
@@ -166,7 +173,6 @@ section {
 #collectSection {
   position: relative;
 }
-
 
 
 .collectHeaderText {
@@ -179,12 +185,14 @@ section {
   letter-spacing: 6px;
 }
 
+
 .dividerIcon1 {
    border-top: 8px solid #da3847;
    border-radius: 3px;
    width: 40%; 
    margin-left: 0;
 }
+
 
 .collectText {
   font-size: 2rem;
@@ -197,6 +205,7 @@ section {
   padding-bottom: 16%;
 }
 
+
 .collectionSectionImages {
   width: 100%;
   position: absolute;
@@ -206,6 +215,7 @@ section {
   top: -160px;
   margin: 0;
 }
+
 
 /*Media Query for BUY, SELL and COLLECT - MOBEIL VERSION*/
 
@@ -220,8 +230,6 @@ section {
   padding-left: 20px;
   letter-spacing: 6px;
 }
-
-
 
 
 .collectText {
@@ -272,6 +280,7 @@ section {
   letter-spacing: 6px;
 }
 
+
   .dividerIcon {
    border-top: 8px solid #da3847;
    border-radius: 3px;
@@ -287,7 +296,6 @@ section {
 }
 
 
-
 .featureImages {
   max-height: 80%;
   max-width: 80%;
@@ -295,8 +303,8 @@ section {
   filter: drop-shadow(7px 7px 20px #a0a0a0);
   animation: featureImages 1s infinite;
   animation-direction: alternate;
-
 }
+
 
   @keyframes featureImages {
   100% {
@@ -329,7 +337,7 @@ section {
   position: absolute;
   left: 0;
   right: 0;
-  top:-160px;
+  top:-130px;
   bottom: 0;
 }
 
@@ -412,6 +420,7 @@ section {
 
 #stayTuned {
   position: relative;
+  padding-bottom: 20px;
 }
 
 .stayTunedContainer {
@@ -422,9 +431,9 @@ section {
   position: absolute;
   z-index: 0;
   top: 0%;
-  left:25%;
-  max-height: 35%;
-  max-width: 35%;
+  left:30%;
+  max-height: 40%;
+  max-width: 40%;
   margin: 0 0 0 0;
   filter: drop-shadow(7px 7px 10px #1b1c25);
 }
@@ -434,8 +443,8 @@ section {
   z-index: 1;
   top: 2.5%;
   right: 25%;
-  max-height:35%;
-  max-width: 35%;
+  max-height:40%;
+  max-width: 40%;
   margin: 0 0 0 0;
   filter: drop-shadow(7px 7px 10px #1b1c25);
 }
@@ -445,8 +454,8 @@ section {
   z-index: 3;
   top: 10%;
   left: 40%;
-  max-height: 45%;
-  max-width: 45%;
+  max-height: 55%;
+  max-width: 55%;
   margin: 0 0 0 0;
   filter: drop-shadow(7px 7px 10px #1b1c25);
 }
@@ -466,18 +475,53 @@ section {
 }
 
 
+i {
+  font-size: 80px;
+  padding-right: 3%;
+}
+
+.mask:hover {
+  color: #a0a0a0;
+}
+
+
 
 /*MEDIA QUERY STAY TUNED SECION*/
 
 @media screen and (max-width: 1028px) {
 
-  .WomanAbstract {
+
+.ColoredBalls {
+  position: absolute;
+  z-index: 0;
+  top: 5%;
+  left:20%;
+  max-height: 40%;
+  max-width: 30%;
+  margin: 0 0 0 0;
+  filter: drop-shadow(7px 7px 10px #1b1c25);
+}
+
+.AnimalAbstract {
+  position: absolute;
+  z-index: 1;
+  top: 8%;
+  left: 45%;
+  max-height:40%;
+  max-width: 30%;
+  margin: 0 0 0 0;
+  filter: drop-shadow(7px 7px 10px #1b1c25);
+}
+
+
+
+.WomanAbstract {
   position: absolute;
   z-index: 3;
   top: 10%;
   left: 35%;
-  max-height: 35%;
-  max-width: 45%;
+  max-height: 45%;
+  max-width: 50%;
   margin: 0 0 0 0;
   filter: drop-shadow(7px 7px 10px #1b1c25);
 }
@@ -490,4 +534,9 @@ section {
 
 
 
+/* Footer */
 
+i {
+  font-size: 30px;
+}
+}
